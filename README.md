@@ -34,7 +34,6 @@ After acceptance, this repository will include:
 
 - Full implementation of AGE-CMSF
 - Training and evaluation scripts
-- Dataset preprocessing utilities
 - Pretrained model checkpoints
 
 ---
