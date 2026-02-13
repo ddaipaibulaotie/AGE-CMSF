@@ -4,14 +4,14 @@ This repository provides the official implementation of **AGE-CMSF**, a method f
 
 The code corresponds to the paper:
 
-> **AGE-CMSF: Adaptive Gated Embedding with Cross-Modal Semantic Fusion for Multimodal Knowledge Graph Completion**  
+> **Adaptive Gated Embedding and Cross Modal Semantic Fusion for Multimodal Knowledge Graph Completion**  
 > (under review)
 
 ---
 
 ## Overview
 
-AGE-CMSF is designed to improve multimodal knowledge graph entity completion by addressing three key challenges:
+AGE-CMSF is designed to improve multimodal knowledge graph entity completion by addressing two key challenges:
 
 - Modality-internal feature imbalance via **Adaptive Gated Embedding (AGE)**
 - Cross-modal semantic alignment and noise suppression via **Cross-Modal Semantic Fusion (CMSF)**
