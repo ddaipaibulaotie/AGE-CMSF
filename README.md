@@ -20,24 +20,37 @@ The method integrates structural, textual, and visual information to construct r
 
 ---
 
-## Code Availability
+### Requirements:
 
-🚧 **Code is under active organization and progressive upload.**
+```shell
+numpy==1.24.2
+scikit_learn==1.2.2
+torch==2.0.0
+tqdm==4.64.1
+node2vec==0.4.6 
+```
 
-Due to the ongoing review process, the complete implementation, training scripts, and detailed instructions will be **fully released upon paper acceptance** to ensure reproducibility.
+### Download:
 
----
+DB15K, MKG-W and MKG-Y: https://github.com/quqxui/MMRNS
 
-## Planned Contents
 
-After acceptance, this repository will include:
+### Multimodal Knowledge Graph Completion:
 
-- Full implementation of AGE-CMSF
-- Training and evaluation scripts
-- Pretrained model checkpoints
+train on DB15K
 
----
+```shell
+sh train_db15k.sh 
+```
 
-## Contact
+train on MKG-W
 
-If you have any questions regarding the implementation, feel free to open an issue or contact the authors.
+```shell
+sh train_mkgw.sh 
+```
+
+train on MKG-Y
+
+```shell
+sh train_mkgy.sh 
+```
