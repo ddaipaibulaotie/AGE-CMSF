@@ -35,7 +35,7 @@ node2vec==0.4.6
 DB15K, MKG-W and MKG-Y: https://github.com/quqxui/MMRNS
 
 
-### Multimodal Knowledge Graph Completion:
+### Run Script:
 
 train on DB15K
 
