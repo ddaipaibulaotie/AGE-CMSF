@@ -189,8 +189,8 @@ class AGECMSF(nn.Module):
         self.pos_rel = nn.Parameter(torch.Tensor(1, 1, dim_str))
         self.pos_tail = nn.Parameter(torch.Tensor(1, 1, dim_str))
 
-        self.proj_ent_vis = AGELinear(visual_tokens.size(1), dim_str) #AGE
-        self.proj_ent_txt = AGELinear(textual_tokens.size(1), dim_str) #AGE
+        self.proj_ent_vis = AGELinear(visual_tokens.size(1), dim_str)
+        self.proj_ent_txt = AGELinear(textual_tokens.size(1), dim_str)
         self.proj_s = nn.Linear(structure_tokens.size(1), dim_str)
 
         ent_encoder_layer = nn.TransformerEncoderLayer(dim_str, num_head, dim_hid, dropout,
@@ -204,10 +204,9 @@ class AGECMSF(nn.Module):
         self.num_con = 256
         self.num_vis = ent_vis_mask.shape[1]
         if self.score_function == "tucker":
-            # self.tucker_decoder = TuckERLayer(dim_str, dim_str)
             self.tucker_decoder = TuckERLayerEA(dim_str, dim_str,
-                                                use_ea_ent=True,  # 实体侧启用EA
-                                                use_ea_rel=False,  # 关系只有单向量就关掉
+                                                use_ea_ent=True,
+                                                use_ea_rel=False,
                                                 S_ent=64)
             self.tucker_decoder.set_masks(ent_mask=self.ent_mask, rel_mask=None)  # [B,N]，1=有效，0=padding
         else:
