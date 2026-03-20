@@ -1,5 +1,5 @@
 data=MKG-W
-num_epoch=2000
+num_epoch=3000
 hidden_dim=1024
 lr=5e-4
 dim=128
