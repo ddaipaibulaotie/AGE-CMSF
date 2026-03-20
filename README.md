@@ -32,7 +32,7 @@ node2vec==0.4.6
 
 ### Download:
 
-DB15K, MKG-W and MKG-Y: https://github.com/quqxui/MMRNS
+DB15K, MKG-W and MKG-Y: https://github.com/quqxui/MMRNS. Then create a new folder named “dataset” and place the downloaded dataset files inside it.
 
 
 ### Run Script:
