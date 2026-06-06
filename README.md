@@ -26,7 +26,9 @@ numpy==1.24.2
 scikit_learn==1.2.2
 torch==2.0.0
 tqdm==4.64.1
-node2vec==0.4.6 
+node2vec==0.4.6
+timm
+einops
 ```
 
 ### Download:
