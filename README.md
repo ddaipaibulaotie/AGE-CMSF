@@ -5,7 +5,6 @@ This repository provides the official implementation of **AGE-CMSF**, a method f
 The code corresponds to the paper:
 
 > **Adaptive Gated Embedding and Cross Modal Semantic Fusion for Multimodal Knowledge Graph Completion**  
-> (under review)
 
 ---
 
